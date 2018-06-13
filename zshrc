@@ -94,4 +94,13 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -la"
+
 alias code="cd ~/code/"
+# Docker
+alias dc="docker-compose"
+alias docker-rebuild="docker-compose stop && docker-compose rm && docker-compose up -d"
+# Git
+alias gs="git status"
+alias gd="git diff"
+alias gl="git log --stat"
+alias glol="git log --oneline"
