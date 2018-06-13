@@ -110,3 +110,5 @@ alias gl="git log --stat"
 alias glol="git log --oneline"
 alias gc="git commit"
 alias ga="git add"
+
+alias best-programming-language-ever="php"
