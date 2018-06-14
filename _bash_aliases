@@ -1,0 +1,21 @@
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ll="ls -la"
+alias code="cd ~/code/"
+
+# Docker
+alias dc="docker-compose"
+alias docker-rebuild="docker-compose stop && docker-compose rm && docker-compose up -d"
+alias dexec="docker-compose exec"
+alias dcps="docker-compose ps"
+
+# Git
+alias gs="git status"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gl="git log --stat"
+alias glol="git log --oneline"
+alias gc="git commit"
+alias ga="git add"
+
+alias best-programming-language-ever="php"

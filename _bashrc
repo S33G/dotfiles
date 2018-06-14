@@ -3,6 +3,7 @@
 # for examples
 
 export PATH=$PATH:/PhpStorm-181.4892.97/bin
+export PATH=$PATH:/usr/bin
 
 PS1='\w$(git-ps1 " (%s)")\$ '
 
