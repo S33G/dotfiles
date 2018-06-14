@@ -23,7 +23,7 @@ for filepath in $FILES; do
     continue;
   fi
 
-  echo "🗂] \033[0m Discovered: ${bold} $filename ${normal} - $filepath"
+  echo "🗂\033[0m Discovered: ${bold} $filename ${normal} - $filepath"
   echo "🛑 \033[0;31m ${bold}Removing:   ${normal} ~/$filename"
   sudo rm ~/$filename
 
