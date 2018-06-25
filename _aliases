@@ -9,6 +9,7 @@ alias dc="docker-compose"
 alias docker-rebuild="docker-compose stop && docker-compose rm && docker-compose up -d"
 alias dexec="docker-compose exec"
 alias dcps="docker-compose ps"
+alias dc-rebuild="gcloud docker -a && dc up -d --build --force-recreate'
 
 # Git
 alias gs="git status"
@@ -16,7 +17,7 @@ alias gd="git diff"
 alias gdc="git diff --cached"
 alias gl="git log --stat"
 alias glol="git log --oneline"
-alias gc="git commit"
+alias gc="EDITOR=vim git commit -v"
 alias ga="git add"
 alias gp="git push"
 alias gup="git stash && git pull && git stash pop"
