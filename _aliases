@@ -9,7 +9,7 @@ alias dc="docker-compose"
 alias docker-rebuild="docker-compose stop && docker-compose rm && docker-compose up -d"
 alias dexec="docker-compose exec"
 alias dcps="docker-compose ps"
-alias dc-rebuild="gcloud docker -a && dc up -d --build --force-recreate'
+alias dc-rebuild="gcloud docker -a && dc up -d --build --force-recreate"
 
 # Git
 alias gs="git status"
