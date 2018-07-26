@@ -10,6 +10,12 @@ alias docker-rebuild="docker-compose stop && docker-compose rm && docker-compose
 alias dexec="docker-compose exec"
 alias dcps="docker-compose ps"
 alias dc-rebuild="gcloud docker -a && dc up -d --build --force-recreate"
+alias dockerkillall='docker kill $(docker ps -q)'
+alias dockercleanc='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
+alias dockercleani='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
+
+# Delete all stopped containers and untagged images.
+alias dockerclean='dockercleanc || true && dockercleani'
 
 # Git
 alias gs="git status"
