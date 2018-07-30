@@ -28,4 +28,7 @@ alias ga="git add"
 alias gp="git push"
 alias gup="git stash && git pull && git stash pop"
 
+# Home Network
+alias router="ssh admin@router.asus.com"
+
 alias best-programming-language-ever="php"
