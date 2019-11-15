@@ -10,8 +10,8 @@ normal=$(tput sgr0)
 # mkdir -p ~/.dotfiles/backup
 
 # Setting path to look for files
-echo "🗂 Discovering files from present working directory ${bold}$(pwd)${normal}..\n"
-FILES=$(pwd)/*;
+echo "🗂 Discovering files from present working directory ${bold}$PWD${normal}..\n"
+FILES=$PWD/*;
 for filepath in $FILES; do
   # Get the filename from the full path
   filename=${filepath##*/}
